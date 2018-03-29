@@ -3,10 +3,12 @@ import Vuex from 'vuex'
 import * as actions from './shop/actions'
 import * as getters from './shop/getters'
 import products from './shop/modules/products'
-import profile from './shop/modules/profile'
+// import profile from './shop/modules/profile'
 // import promotions from './shop/modules/promotions'
 import shoppingCart from './shop/modules/shopping-cart'
+import BootstrapVue from 'bootstrap-vue'
 
+Vue.use(BootstrapVue);
 Vue.use(Vuex)
 
 const debug = process.env.NODE_ENV !== 'production'
@@ -16,7 +18,7 @@ export default new Vuex.Store({
   getters,
   modules: {
     products,
-    profile,
+    // profile,
     // promotions,
     shoppingCart
   },

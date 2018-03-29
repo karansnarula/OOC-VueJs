@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template><div>
+  <div style="margin-top:60px;">
     <h3>Cart</h3>
 
     <ShoppingCartItem
@@ -17,6 +17,7 @@
       </button>
       <!-- <p v-if="orderOnLimit">Order is over limit.</p> -->
     </div>
+  </div>
   </div>
 </template>
 

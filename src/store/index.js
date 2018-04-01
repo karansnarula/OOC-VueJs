@@ -7,9 +7,13 @@ import products from './shop/modules/products'
 // import promotions from './shop/modules/promotions'
 import shoppingCart from './shop/modules/shopping-cart'
 import BootstrapVue from 'bootstrap-vue'
+import Router from 'vue-router'
+import VModal from 'vue-js-modal'
 
-Vue.use(BootstrapVue);
+Vue.use(BootstrapVue)
 Vue.use(Vuex)
+Vue.use(Router)
+Vue.use(VModal)
 
 const debug = process.env.NODE_ENV !== 'production'
 

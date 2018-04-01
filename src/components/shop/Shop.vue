@@ -1,8 +1,9 @@
 <template>
   <div>
+    <!-- <button type="button" class="btn"  style="float: right;">Login</button> -->
 
     <div>
-      <b-button @click="showModal">
+      <!-- <b-button @click="showModal">
         Login
       </b-button>
       <b-modal ref="myModalRef" hide-footer title="Using Component Methods">
@@ -10,10 +11,15 @@
           <h3>Login!</h3>
         </div>
         <b-btn class="mt-3" variant="outline-danger" block @click="hideModal">Close Me</b-btn>
-      </b-modal>
+      </b-modal> -->
+      <button
+        class="btn green"
+        @click="$modal.show('demo-login')">
+        Login
+      </button>
     </div>
 
-    <!-- <button type="button" class="btn"  style="float: right;">Login</button> -->
+
     <button type="button" class="btn"  style="float: right;">Logout</button>
     <div class="container">
       <div class="row mt-2">
@@ -25,13 +31,13 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 import PageHeader from './../shared/PageHeader'
 // import Coupons from './Coupons'
+import DemoLoginModal from './DemoLoginModal.vue' //This shit does not work!! Don't know why
 import ProductList from './products/ProductList'
 import ShoppingCart from './shopping-cart/ShoppingCart'
 
@@ -41,15 +47,9 @@ export default {
     PageHeader,
     // Coupons,
     ProductList,
-    ShoppingCart
+    ShoppingCart,
+    DemoLoginModal
   },
-  methods: {
-  showModal () {
-    this.$refs.myModalRef.show()
-  },
-  hideModal () {
-    this.$refs.myModalRef.hide()
-  }
-}
+
 }
 </script>
